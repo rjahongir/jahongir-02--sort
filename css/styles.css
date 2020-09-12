@@ -1,7 +1,7 @@
 @font-face {
    font-family: 'Futura PT Book';
    src: url('../fonts/FuturaPT-Book.woff2') format('woff2'),
-       url('../fonts/FuturaPT-Book.woff') format('woff');
+   url('../fonts/FuturaPT-Book.woff') format('woff');
    font-weight: normal;
    font-style: normal;
    font-display: swap;
@@ -10,7 +10,7 @@
 @font-face {
    font-family: 'Futura PT';
    src: url('../fonts/FuturaPT-Bold.woff2') format('woff2'),
-       url('../fonts/FuturaPT-Bold.woff') format('woff');
+   url('../fonts/FuturaPT-Bold.woff') format('woff');
    font-weight: bold;
    font-style: normal;
    font-display: swap;
@@ -19,7 +19,7 @@
 @font-face {
    font-family: 'Futura PT';
    src: url('../fonts/FuturaPT-Light.woff2') format('woff2'),
-       url('../fonts/FuturaPT-Light.woff') format('woff');
+   url('../fonts/FuturaPT-Light.woff') format('woff');
    font-weight: 300;
    font-style: normal;
    font-display: swap;
@@ -28,13 +28,11 @@
 @font-face {
    font-family: 'Futura PT';
    src: url('../fonts/FuturaPT-Medium.woff2') format('woff2'),
-       url('../fonts/FuturaPT-Medium.woff') format('woff');
+   url('../fonts/FuturaPT-Medium.woff') format('woff');
    font-weight: 500;
    font-style: normal;
    font-display: swap;
 }
-
-
 
 html {
    height: 100%;
@@ -58,9 +56,482 @@ html {
 }
 
 body {
+   height: 100%;
    font-family:"Futura PT", "Arial", "sans-serif";
+   font-weight: normal;
    font-size: 16px;
-   line-height: 1.5;
+   line-height: 21px;
    margin: 0;
-   padding: 0;
+   padding: 0;  
+   margin-top: 56px; 
+   color: #333333;
 }  
+
+.container {
+   max-width: 1350px;
+   margin: 0 auto;
+   padding: 0 20px;
+}
+
+.button {
+   display: inline-block;
+   vertical-align: baseline;
+   padding: 16px 48px;
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 21px;
+   text-align: center;
+   text-decoration: none;
+   border: 1px solid transparent;
+   background: #333333;
+   border-radius: 3px;
+   color: #FFFFFF;
+   transition:background-color 0.4s ease, color 0.4s ease, opacity 0.4s ease; 
+   white-space: nowrap;
+   cursor: pointer;
+} 
+
+.site-header {
+   background-color: #fff;
+}
+
+.header-top{
+   display: flex;
+   align-items: center;
+   padding-left: 230px;
+   background: #F9F8F8;
+}
+
+.header-top-address{
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 18px;
+}
+
+.nav-top{
+   margin: 0 auto;
+}
+
+.nav-list-top{
+   display: flex;
+   align-items: center;
+   padding: 0;
+   margin: 0;
+   list-style-type: none;
+}
+
+.nav-items-top {
+   display: flex;
+   align-items: center;
+   white-space: nowrap;
+}
+
+.tel-link{
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 18px;
+   text-decoration: none;
+   color: #333333;
+   transition: color 0.5s ease, opacity 0.5s ease; 
+}
+
+.tel-link:hover {
+   color: #FFBD54;
+}
+
+.tel-link:active {
+   color: #333333;
+   opacity: 0.5;
+}
+
+.nav-items-top-active::before{
+   display: inline-block;
+   width: 13px;
+   height: 13px;
+   margin-right: 9px;
+   background-image: url("../img/tel.svg");
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+   content: "";
+}
+
+.nav-items-top-active-end::after{
+   display: inline-block;
+   width: 4px;
+   height: 4px;
+   margin-left: 9px;
+   margin-right: 9px;
+   border-radius: 50%;
+   background: #FFBD54;
+   content: "";
+}
+
+.header-top-datta{
+   display: flex;
+   align-items: center;
+}
+
+.header-top-datta::before{
+   display: inline-block;
+   width: 14px;
+   height: 14px;
+   transform: translateX(-50%);
+   margin-right: 7px;
+   background-image: url("../img/schedule.svg");
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+   content: "";
+} 
+
+.header-t-datta {
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 18px;
+}
+
+.header-t-datta + .header-t-datta {
+   margin-left: 17px;
+}
+
+.header{
+   position: relative;
+   z-index: 2;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   flex-wrap: nowrap;
+}
+
+.logo-link{
+   width: 177px;
+}
+
+.logo-link-img {
+   position: absolute;
+   z-index: 2;
+   top: 50%;
+   left: 0;
+   transform: translatey(-50%);
+}
+
+.logo-link:hover {
+   opacity: 0.8;
+}
+
+.logo-link:active {
+   opacity: 0.5;
+}
+
+.nav-list {
+   display: flex;
+   align-items: center;
+   padding: 0;
+   margin: 0;
+   list-style-type: none;
+}
+
+.nav-items{
+   position: relative;
+   white-space: nowrap;
+   transition: box-shadow 0.3s ease;
+}
+
+.nav-link {
+   display: inline-block;
+   padding: 19px 27px;
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 21px;
+   text-decoration: none;
+   text-transform: capitalize;
+   color: #333333;
+   transition: background-color 0.5s ease, color 0.5s ease, opacity 0.5s ease; 
+}
+
+.nav-link:hover {
+   background-color: #FFBD54;;
+   color: #333333;
+} 
+.nav-link:active {
+   opacity: 0.5;
+} 
+
+.ctive-nav-item{
+   display: flex;
+   align-items: center;
+}
+
+.ctive-nav-item::before{
+   display: inline-block;
+   width: 15px;
+   height: 15px;
+   margin-right: 12px;
+   background-image: url("../img/active.svg");
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+   content: "";
+}
+
+.question{
+   width: 177px;
+}
+
+.to-ask-a-question{
+   display: flex;
+   align-items: center;
+   flex-wrap: nowrap;
+   padding:19px 27px;
+   text-decoration: none;
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 21px;
+   text-align: right;
+   color: #333333;
+   transition: background-color 0.5s ease, color 0.5s ease, opacity 0.5s ease; 
+}
+
+.to-ask-a-question > span {
+   white-space: nowrap;
+   margin-left: 4px;
+}
+
+.to-ask-a-question:hover {
+   background-color: #333333;
+   color: #FFFFFF;
+} 
+.to-ask-a-question:active {
+   opacity: 0.5;
+} 
+
+.section-intro {
+   background-color: #F9F8F8;
+}
+
+.section-intro-container {
+   display: flex;
+   position: relative;
+   align-items: center;
+   padding-top: 153px;
+   padding-bottom: 320px;
+   justify-content: space-between;
+}
+
+.section-intro-container{
+   background-image: url("../img/img@1x.png");
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+}
+
+.section-intro-txt {
+   width: 608px;
+   margin-left: auto;
+   margin-right: 40px;
+}
+
+.section-intro-heading {
+   margin: 0;
+   margin-bottom: 29px;
+   font-weight: bold;
+   font-size: 70px;
+   line-height: 64px;
+}
+
+.section-intro-heading > span {
+   color: cornflowerblue;
+}
+
+.section-intro-pharagraph {
+   width: 495px;
+   margin: 0;
+   margin-bottom: 38px;
+   font-weight: normal;
+   font-size: 16px;
+   line-height: 21px;
+   color: #949494;
+}
+
+.button-orange:hover {
+   background: #FFBD54;
+   color: #333333;
+} 
+.button-opacity:active {
+   color: #333333;
+   opacity: 0.5;
+}
+
+hr {
+   border: transparent;
+   width: 140px;
+   border: 1px solid #DBDBDB;
+}
+
+.section-blockquote {
+   background: #E5E5E5;
+}
+
+.section-blockquote-container{
+   position: relative;
+   z-index: 2;
+   width: 1134px;
+   padding: 48px 0;
+}
+
+.section-blockquote-txt {
+   width: 753px;
+   margin: 0 auto;
+   font-weight: normal;
+   font-size: 20px;
+   line-height: 26px;
+   text-align: center;
+   color: #949494;
+}
+.blockquote-eclipse::before{
+   position: absolute;
+   z-index: 2;
+   width: 40px;
+   height: 40px;
+   content: "";
+}
+
+.eclipse-left::before{
+   bottom: 100%;
+   left: 0;
+   transform: translateY(-50%);
+   background-image: url("../img/p.svg");
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: contain;
+}
+.eclipse-right::before{
+   right: 0;
+   top: 100%;
+   transform: translateY(50%);
+   background-image: url("../img/q.svg");
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: contain;
+}
+
+.section-convenience-container{
+   text-align: center;
+   padding-top: 191px;
+   padding-bottom: 127px;
+}
+
+.section-workstyle-heading{
+   margin: 0;
+   margin-bottom: 80px;
+   font-weight: bold;
+   font-size: 48px;
+   line-height: 20px;
+}
+.animals-container{
+   position: relative;
+   z-index: 2;
+}
+
+.animals-list{
+   display: flex;
+   flex-wrap: nowrap;
+   padding: 0;
+   margin: 0;
+   list-style-type: none;
+   overflow: hidden;
+}
+.animals-item{
+   position: relative;
+   z-index: 2;
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   width: 191px;
+   padding: 30px 35px;
+   background-color: #fff;
+}
+.animals-item + .animals-item {
+   margin-left: 13px;
+}
+.animals-item::before{
+   display: inline-block;
+   width: 54px;
+   height: 77px;
+   margin:0 auto;
+   margin-bottom: 5px;
+   background-image: url("https://picsum.photos/54/77");
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+   content: "";
+}
+.animal-item-link::before{
+   position: absolute;
+   z-index: 2;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   content: "";
+}
+
+.workstyle-heading{
+   margin-top: auto;
+   font-weight: 500;
+   font-size: 18px;
+   line-height: 22px;
+   text-align: center;
+}
+
+.main-button {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: absolute;
+   z-index: 2;
+   top: 50%;
+   width: 30px;
+   height: 30px;
+   border: none;
+   background-color: rgba(200, 234, 241, 0.705);
+   transition: background-color 0.4s ease;
+}
+
+.main-button:hover {
+   background-color: #aebbbec7;
+}
+
+.main-button::before {
+   display: block;
+   border-style: solid;
+   transition:border-color 0.4s ease ;
+   content: "";
+}
+
+.button-right::before {
+   transform: translatey(-50%);
+   border-width: 2.5px 0 2.5px 5px;
+   border-color: transparent transparent transparent #285e65;
+}
+
+.button-left::before {
+   transform: translatey(-50%);
+   border-width: 2.5px 5px 2.5px 0;
+   border-color: transparent #285765 transparent transparent;
+}
+
+.button-right:hover::before {
+   border-color: transparent transparent transparent #ffffff;
+}
+.button-left:hover::before {
+   border-color: transparent #ffffff transparent transparent;
+}
+
+.button-left {
+   right: 100%;
+}
+.button-right {
+   left: 100%;
+}

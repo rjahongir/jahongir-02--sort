@@ -1,14 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Document</title>
-   <link rel="stylesheet" href="css/normalize.css">
-   <link rel="stylesheet" href="css/styles.css">
+  <!--  <link rel="stylesheet" href="css/normalize.css">
+   <link rel="stylesheet" href="css/styles.css"> -->
+   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-   <h2>nimadir </h2>
-   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt fuga earum sequi et officiis quod at! Dignissimos, quidem? Architecto, veritatis repudiandae? Accusantium est error laboriosam esse expedita hic tempore doloribus!</p>
+   <header class="site-header">
+      <div class="container">
+         <div class="header-top">
+            <address class="header-top-address">г. Мариуполь, проспект Победы, 48а</address>
+            <nav class="nav-top">
+               <ul class="nav-list-top">
+                  <li class="nav-items-top nav-items-top-active nav-items-top-active-end">
+                     <a class="tel-link blue-link" href="tel:+998909213711">(067) 634 -75 - 74</a>
+                  </li>
+                  <li class="nav-items-top nav-items-top-active-end">
+                     <a class="tel-link blue-link" href="tel:+998909213711">(0637) 57 - 01 - 31</a>
+                  </li>
+                  <li class="nav-items-top">
+                     <a class="tel-link" href="tel:+998909213711">(098) 266 - 43 - 89</a>
+                  </li>
+               </ul>
+            </nav>
+            <div class="header-top-datta">
+               <p class="header-t-datta header-top-datta-active">Пн - Пт 8:00 - 18:00</p>
+               <p class="header-t-datta">Сб - Вс 8:00 - 14:00</p>
+            </div>
+         </div>
+         <div class="header">
+            <a class="logo-link" href="index.html">
+               <img class="logo-link-img" src="img/logo.svg" alt="zoo-logo" width="177" height="86">
+            </a>
+            <nav class="nav-wrapper">
+               <ul class="nav-list">
+                  <li class="nav-items ctive-nav-item">
+                     <a class="nav-link " href="index.html">Главная</a>
+                  </li>
+
+                  <li class="nav-items">
+                     <a class="nav-link" href="portfolio.html">О Клинике</a>
+                  </li>
+                  <li class="nav-items">
+                     <a class="nav-link" href="team.html">Наши Услуги</a>
+                  </li>
+                  <li class="nav-items">
+                     <a class="nav-link" href="blog.html">Полезные Статьи</a>
+                  </li>
+                  <li class="nav-items">
+                     <a class="nav-link" href="contacts.html">FAQ</a>
+                  </li>
+                  <li class="nav-items">
+                     <a class="nav-link" href="contacts.html">Контакты</a>
+                  </li>
+               </ul>
+            </nav>
+            <div class="question">
+               <a class="to-ask-a-question" href="#">
+                  <img src="img/pet.svg" alt="">
+                  <span>Задать вопрос</span>
+               </a>
+            </div>
+         </div>
+      </div>
+   </header>
+   <main class="main-wrapper">
+      <section class="section-intro">
+         <h1 class="visually-hidden">Let's Save the Animals</h1>
+         <div class="container section-intro-container">
+            <div class="section-intro-txt">
+               <h2 class="section-intro-heading">Мы заботимся о <span>ваших питомцах!</span></h2>
+               <p class="section-intro-pharagraph">
+                  Вам и Вашему любимцу множество услуг по диагностике, профилактике заболеваний по лечению и уходу за
+                  Вашими животными. Профессионалы работающие в нашей клинике сделают все для того, чтобы быстро,
+                  эффективно и максимально безболезненно выполнить любие процедуры, которые необходимы Вашему домашнему
+                  любимцу.
+               </p>
+               <a class="button button-orange button-opacity" href="#services_section">Наши услуги</a>
+            </div>
+         </div>
+      </section>
+      <hr>
+      <section class="section-blockquote" id="blockquote_section">
+         <div class="container section-blockquote-container">
+            <blockquote class="section-blockquote-txt">Наша ветеринарная клиника готова уделить максимум внимания Вам и
+               Вашему питамцу. Здоровье и благополучие Ваших животных очень важно для нас и мы стремимся оказать
+               наилучшую возможную ветеринарную помощь.
+            </blockquote>
+            <span class="blockquote-eclipse eclipse-left" aria-label="eclipse-left"></span>
+            <span class="blockquote-eclipse eclipse-right" aria-label="eclipse-right"></span>
+         </div>
+      </section>
+      <hr>
+      <section class="section-convenience">
+         <h2 class="visually-hidden">Let's Save the Animals</h2>
+         <div class="container section-convenience-container">
+            <h3 class="section-workstyle-heading">Наши услуги</h3>
+            <div class="animals-container">
+               <ul class="animals-list">
+                  <li class="animals-item">
+                     <a class="animal-item-link" href="#"></a>
+                     <h3 class="workstyle-heading">Первичный осмотр</h3>
+                  </li>
+                  <li class="animals-item">
+                     <a class="animal-item-link" href="#"></a>
+                     <h3 class="workstyle-heading">Первичный осмотр</h3>
+                  </li>
+                  <li class="animals-item">
+                     <a class="animal-item-link" href="#"></a>
+                     <h3 class="workstyle-heading">Хирургическое вмешательство</h3>
+                  </li>
+                  <li class="animals-item">
+                     <a class="animal-item-link" href="#"></a>
+                     <h3 class="workstyle-heading">Дерматология</h3>
+                  </li>
+                  <li class="animals-item">
+                     <a class="animal-item-link" href="#"></a>
+                     <h3 class="workstyle-heading">Лабораторная диагностика</h3>
+                  </li>
+                  <li class="animals-item">
+                     <h3 class="workstyle-heading">УЗИ
+                        диагностика</h3>
+                  </li>
+                  <li class="animals-item">
+                     <a class="animal-item-link" href="#"></a>
+                     <h3 class="workstyle-heading">Чипирование</h3>
+                  </li>
+                  <li class="animals-item">
+                     <a class="animal-item-link" href="#"></a>
+                     <h3 class="workstyle-heading">Международные паспорта</h3>
+                  </li>
+                  <li class="animals-item">
+                     <a class="animal-item-link" href="#"></a>
+                     <h3 class="workstyle-heading">Вакцинация</h3>
+                  </li>
+                  <li class="animals-item">
+                     <a class="animal-item-link" href="#"></a>
+                     <h3 class="workstyle-heading">Стоматология</h3>
+                  </li>
+                  <li class="animals-item">
+                     <a class="animal-item-link" href="#"></a>
+                     <h3 class="workstyle-heading">Вызов на дом</h3>
+                 </li>
+               </ul>
+               <button class="main-button button-left">
+                  <span class="visually-hidden">button-left</span>
+                  <span class="before-left-button"></span>
+               </button>
+               <button class="main-button button-right">
+                  <span class="visually-hidden">button-right</span>
+                  <span class="after-button-right"></span>
+               </button>
+            </div>
+         </div>
+      </section>
+   </main>
 </body>
 </html>

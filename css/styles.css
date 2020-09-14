@@ -535,3 +535,281 @@ hr {
 .button-right {
    left: 100%;
 }
+
+.section-know{
+   background-color: rgb(120,192,222);
+}
+
+.know-form{
+   display: flex;
+}
+
+.know-container{
+   width: 1000px;
+   padding: 40px;
+}
+
+.know__heading{
+   font-weight: bold;
+font-size: 48px;
+line-height: 20px;
+color: #FFFFFF;
+}
+
+.know__email{
+   width: 335px;
+   padding: 18px 22px;
+   border: none;
+   outline-color: transparent;
+   margin-right: 21px;
+background: #FFFFFF;
+border-radius: 5px;
+}
+
+.know__email::placeholder{
+   font-weight: normal;
+   font-size: 16px;
+   line-height: 20px;
+   color: #949494;
+}
+
+.container-form {
+   position: relative;
+   display: flex;
+   padding: 0;
+}
+
+.section-form-link-img{
+   display: inline-block;
+   width: 462px;
+   height: 652px;
+}
+
+.form-communication{
+width: 1463px;
+height: 649px;
+background-color: #222;
+}
+.form-communication::before{
+position: absolute;
+top: 133px;
+right: 0;
+   width: 400px;
+   height: 400px;
+   /* background: none; */
+   background-color:transparent;
+   background-image: url("../img/baluu.svg");
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: contain;
+   content: "";
+}
+
+.form-communication__container{
+   width: 360px;
+   margin-top: 62px;
+   margin-left: 165px;
+}
+
+.communication__container-title{
+   margin: 0;
+   margin-bottom: 14px;
+   font-weight: bold;
+   font-size: 48px;
+   line-height: 62px;
+   color: #FFFFFF;
+}
+
+.communication__container-text {
+   margin: 0;
+   margin-bottom: 29px;
+   font-weight: normal;
+font-size: 16px;
+line-height: 20px;
+color: #949494;
+}
+
+.foorem-input {
+   display: block;
+   width: 375px;
+   padding: 15px 22px;
+   margin-bottom: 14px;
+   outline-color: transparent;
+   background: #FFFFFF;
+border-radius: 0px;
+}
+
+.foorem-input::placeholder{
+   font-weight: normal;
+font-size: 16px;
+line-height: 21px;
+   color: #949494;
+}
+
+.foorem-textarea{
+   width: 375px;
+   resize: vertical;
+   min-height: 165px;
+   margin-bottom: 30px;
+border-radius: 0px;
+outline-color: transparent;
+font-weight: normal;
+font-size: 16px;
+line-height: 21px;
+display: flex;
+align-items: center; 
+background: #FFFFFF;
+color: #DBDBDB;
+}
+
+.form-button{
+   width: 226px;
+   outline-color: transparent;
+   padding: 15px 50px;
+background-color: #FFBD54;
+border-radius: 0px;
+}
+
+.form-button-bleck:hover{
+   background-color: #333333;
+   color: #FFFFFF;
+}
+.form-button-bleck:active{
+opacity: 0.3; 
+}
+.zoo-footer {
+   background: #F3F3F3;
+}
+
+.zoo-footer-container {
+   padding-top: 61px;
+   padding-bottom: 23px;
+}
+
+.footer-unifying {
+   display: flex;
+}
+
+.footer-logo-link {
+   margin-right: 67px;
+}
+
+.footer-list {
+   margin-right: 87px;
+   padding: 0;
+   list-style-type: none;
+}
+
+.footer-list + .footer-list {
+   margin-right: 127px;
+}
+
+.footer-item + .footer-item{
+   margin-top: 14px;
+}
+
+.footer-list-links {
+   display: block;
+   text-decoration: none;
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 21px;
+   color: #333333;
+   white-space: nowrap;
+}
+
+.footer-list-links:not(:last-of-type) {
+   margin-bottom: 16px;
+}
+
+.footer-time-links-box {
+   position: relative;
+   top: 18px;
+   width: 152px;
+   margin-right: 112px;
+}
+
+.footer-time-links {
+   display: block;
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 18px;
+   margin-bottom: 4px;
+}
+
+.footer-time-links:nth-of-type(1)::before {
+   position: absolute;
+   right: 100%;
+   display: inline-block;
+   width: 13px;
+   height: 13px;
+   margin-right: 9px;
+   background-image: url("../img/calendar-icon.svg");
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-size: contain;
+   content: "";
+}
+
+.footer-top-address {
+   position: relative;
+   top: 18px;
+   z-index: 1;
+   width: 157px;
+   margin-right: 87px;
+   font-weight: 500;
+   font-style: normal;
+   font-size: 14px;
+   line-height: 18px;
+}
+
+.footer-top-address::before {
+   position: absolute;
+   right: 100%;
+   display: inline-block;
+   width: 13px;
+   height: 13px;
+   margin-right: 9px;
+   background-image: url("../img/house-icon.svg");
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-size: contain;
+   content: "";
+}
+
+.footer-tel-links-box {
+   position: relative;
+   top: 18px;
+   width: 107px;
+   margin-left: auto;
+}
+
+.footer-tel-links {
+   display: block;
+   text-decoration: none;
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 18px;
+   margin-bottom: 4px;
+   color: #333333;
+}
+
+.footer-tel-links-box::before {
+   position: absolute;
+   right: 100%;
+   display: inline-block;
+   width: 13px;
+   height: 13px;
+   margin-right: 9px;
+   background-image: url("../img/tel.svg");
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-size: contain;
+   content: "";
+}
+
+.copyright {
+   margin: 0;
+   margin-top: 28px;
+   text-align: right;
+}

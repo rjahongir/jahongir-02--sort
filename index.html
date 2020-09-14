@@ -5,10 +5,11 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Document</title>
-  <!--  <link rel="stylesheet" href="css/normalize.css">
-   <link rel="stylesheet" href="css/styles.css"> -->
-   <link rel="stylesheet" href="css/style.min.css">
+   <link rel="stylesheet" href="css/normalize.css">
+   <link rel="stylesheet" href="css/styles.css">
+   <!--    <link rel="stylesheet" href="css/style.min.css"> -->
 </head>
+
 <body>
    <header class="site-header">
       <div class="container">
@@ -145,7 +146,7 @@
                   <li class="animals-item">
                      <a class="animal-item-link" href="#"></a>
                      <h3 class="workstyle-heading">Вызов на дом</h3>
-                 </li>
+                  </li>
                </ul>
                <button class="main-button button-left">
                   <span class="visually-hidden">button-left</span>
@@ -158,6 +159,100 @@
             </div>
          </div>
       </section>
+
+      <section class="section-know">
+         <div class="container know-container">
+            <div class="form-wrapper">
+               <h2 class="know__heading">Будь в курсе событий</h2>
+
+               <form class="know-form" action="https://echo.htmlacademy.ru" method="POST">
+                     <label class="visually-hidden" for="email">Your email</label>
+                     <input class="know__email" name="email" id="email"
+                        required type="email"
+                        placeholder="Укажите Ваш email адрес">
+                  <button class="button button-orange button-opacity" type="submit">Подписаться</button>
+               </form>
+            </div>
+            <img class="know__puppy" src="" srcset="1x, 2x" alt="kuchuk"
+               width="613" height="481">
+         </div>
+      </section>
+
+      
+      
+      <section class="section-form">
+         <h2 class="visually-hidden">Обратная связь</h2>
+         <div class="container container-form">
+            <a class="section-form-link" href="https://goo.gl/maps/R5ZherEubF47RNkt9" target="_blank"> 
+               <img  class="section-form-link-img" src="img/karta-1x.jpg" srcset="img/karta-1x.jpg 1x, img/karta-2x.jpg 2x" width="462"
+               height="652" alt="samarqand-haritasi">
+            </a>
+            <form class="form-communication" action="handler.php" method="POST">
+               <div class="form-communication__container">
+                  <h3 class="communication__container-title">Обратная связь</h3>
+                  <p class="communication__container-text">При возникновении вопросов по поводу работы клиники или консультаций, заполните форму ниже:</p>
+                  <div>
+                     <label for="your-name"></label>
+                        <input class="foorem-input" type="text" placeholder="your name" id="your-name" name="your_name" minlength="3" maxlength="14" required>
+                        </div>
+                        <div>
+                                <label for="email"> </label>
+                        <input class="foorem-input"  type="email" placeholder="Email для обратной связи" id="your-name" name="your_name" minlength="7" maxlength="18" required>
+                        </div>
+                      <div>
+                         <label for="questions"></label>
+                         <textarea class="foorem-textarea"  name="questions"   id="questions" rows="5" minlength="7" maxlength="40" required> Например: в каком возрасте можно прививать от бешенства?
+                         </textarea>
+                      </div>
+                      <button class="button form-button form-button-bleck" type="submit">Задать нам вопрос</button>
+               </div>
+            </form>
+         </div>
+      </section>
    </main>
+   <footer class="zoo-footer">
+      <div class="container zoo-footer-container">
+         <div class="footer-unifying">
+            <a href="index.html" class="footer-logo-link">
+               <img class="footer-logo-img" src="img/logo.svg" alt="zoo-logo" width="158" height="76">
+            </a>
+            <ul class="footer-list">
+               <li class="footer-item">
+                  <a class="footer-list-links" href="index.html">Главная</a>
+               </li>
+               <li class="footer-item">
+                  <a class="footer-list-links" href="about.html">О Клинике</a>
+               </li>
+               <li class="footer-item"> 
+                  <a class="footer-list-links" href="services.html">Наши Услуги</a>
+               </li>
+            </ul>
+            <ul class="footer-list">
+              <li class="footer-item"> 
+                 <a class="footer-list-links" href="#articles">Полезные Статьи</a>
+               </li>
+               <li class="footer-item"> 
+                  <a class="footer-list-links" href="faq.html">FAQ</a>
+               </li>
+               <li class="footer-item">
+                  <a class="footer-list-links" href="contacts.html">Контакты</a>
+               </li>
+            </ul>
+            
+            <div class="footer-time-links-box">
+               <time datetime="2008-02-14 20:00" class="footer-time-links">Пн - Пт 8:00 - 18:00</time>
+               <time datetime="2008-02-14 20:00" class="footer-time-links">Сб - Вс 8:00 - 14:00</time>
+            </div>
+            <address class="footer-top-address">г. Мариуполь, проспект Победы, 48а</address>
+            <div class="footer-tel-links-box">
+               <a href="tel:(067)634-75-74" class="footer-tel-links">(067) 634 -75 - 74</a>
+               <a href="tel:(067)634-75-74" class="footer-tel-links">(067) 634 -75 - 74</a>
+               <a href="tel:(067)634-75-74" class="footer-tel-links">(067) 634 -75 - 74</a>
+            </div>
+         </div>
+         <p class="copyright">© 2020 example. All Rights Reserved.</p>
+      </div>
+   </footer>
 </body>
+
 </html>
